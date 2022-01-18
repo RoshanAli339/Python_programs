@@ -3,7 +3,7 @@ from datetime import datetime
 
 os.system('git add .')
 
-commit = 'git commit -m "' + datetime.now().strftime("%A %d %B %Y %H:%M:%S") +'"'
+commit = 'git commit -m "' + datetime.now().strftime("%A %d %B %Y %I:%M:%S %p") +'"'
 os.system(commit)
 
 os.system('git push -u origin main')
