@@ -7,18 +7,17 @@ def sum_digits(n):
     return sum
 
 cardno = input("Enter the credit card number: ")
-numbers = cardno.split(' ')
-numbers = [int(i) for i in numbers]
+numbers = [int(i) for i in cardno]
 
 sum = 0
 for i in range(len(numbers)):
-    if i % 2 == 0:
+    if i % 2 != 0:
         if 2 * numbers[i] > 9:
             sum += sum_digits(2 * numbers[i])
         else:
             sum += 2 * numbers[i]
     else:
-        sum = sum + numbers[i]
+        sum += numbers[i]
 print(f"Sum= {sum}")
 if sum % 10 == 0 and len(numbers) >= 13 and len(numbers) <= 16:
 
