@@ -5,7 +5,7 @@ def estimate_pi():
     val = 0
     k = 0
     while True:
-        val = ( math.factorial(4 * k) * (1103 + 26390 * k) ) / ( math.factorial(k) * (396)**(4 * k))
+        val = ( math.factorial(4 * k) * (1103 + 26390 * k) ) / ( math.factorial(k)**4 * (396)**(4 * k))
         if val < 1e-15:
             break
 
