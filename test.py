@@ -1,5 +1,3 @@
-import math
+fruit = 'banana'
 
-n = 2.856
-
-print(math.sin(math.radians(30)))
+print(fruit.center(30))
